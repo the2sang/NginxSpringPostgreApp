@@ -40,17 +40,20 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
-#  pgadmin:
-#    container_name: pgadmin
-#    image: dpage/pgadmin4
-#    restart: always
-#    ports:
-#      - "5555:80"
-#    volumes:
-#      - ./pgadmin/pgadmin-data:/var/lib/pgadmin
-#    environment:
-#      - PGADMIN_DEFAULT_EMAIL=the2sang@gmail.com
-#      - PGADMIN_DEFAULT_PASSWORD=password
-#      - TZ=Asia/Seoul
-#    depends_on:
-#      - postgredb
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4
+    restart: always
+    ports:
+      - "5555:80"
+    volumes:
+      - ./pgadmin/pgadmin-data:/var/lib/pgadmin
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=the2sang@gmail.com
+      - PGADMIN_DEFAULT_PASSWORD=password
+      - TZ=Asia/Seoul
+    depends_on:
+      - postgredb
+networks:
+  postgredb:
+    driver: bridge
