@@ -10,7 +10,7 @@ services:
     depends_on:
       - springBoot
   springBoot:
-    image: 'blog-api-docker.jar'
+    image: 'shopping-mall-webapp.jar'
     container_name: springBoot
     ports:
       - "8080:8080"

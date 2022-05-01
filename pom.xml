@@ -59,7 +59,7 @@
     </dependencies>
 
     <build>
-        <finalName>blog-api-docker</finalName>
+        <finalName>shopping-mall-webapp</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

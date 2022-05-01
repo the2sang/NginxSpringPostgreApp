@@ -1,4 +1,4 @@
 FROM openjdk:11
-ADD target/blog-api-docker.jar blog-api-docker.jar
-ENTRYPOINT ["java", "-jar","blog-api-docker.jar"]
+ADD target/shopping-mall-webapp.jar shopping-mall-webapp.jar
+ENTRYPOINT ["java", "-jar","shopping-mall-webapp.jar"]
 EXPOSE 8080
