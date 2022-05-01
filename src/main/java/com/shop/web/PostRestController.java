@@ -1,7 +1,7 @@
-package com.odazie.simpleblog.web;
+package com.shop.web;
 
-import com.odazie.simpleblog.business.PostService;
-import com.odazie.simpleblog.data.entity.Post;
+import com.shop.service.PostService;
+import com.shop.entity.Post;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

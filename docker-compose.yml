@@ -1,4 +1,4 @@
-version: "3"
+version: "3.8"
 services:
   web:
     image: nginx
@@ -26,15 +26,31 @@ services:
   postgredb:
     image: postgres
     container_name: postgredb
+    restart: unless-stopped
     ports:
       - "5432:5432"
     environment:
       - POSTGRES_PASSWORD=password
       - POSTGRES_USER=postgres
-      - POSTGRES_DB=postgres
+      - POSTGRES_DB=postgres\
+      - TZ=Asia/Seoul
 #    restart: unless-stopped
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 10s
       timeout: 5s
       retries: 5
+#  pgadmin:
+#    container_name: pgadmin
+#    image: dpage/pgadmin4
+#    restart: always
+#    ports:
+#      - "5555:80"
+#    volumes:
+#      - ./pgadmin/pgadmin-data:/var/lib/pgadmin
+#    environment:
+#      - PGADMIN_DEFAULT_EMAIL=the2sang@gmail.com
+#      - PGADMIN_DEFAULT_PASSWORD=password
+#      - TZ=Asia/Seoul
+#    depends_on:
+#      - postgredb

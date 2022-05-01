@@ -1,7 +1,7 @@
-package com.odazie.simpleblog.business;
+package com.shop.service;
 
-import com.odazie.simpleblog.data.entity.Post;
-import com.odazie.simpleblog.data.repository.PostRepository;
+import com.shop.entity.Post;
+import com.shop.repository.PostRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

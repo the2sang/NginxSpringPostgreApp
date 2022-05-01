@@ -1,4 +1,4 @@
-package com.odazie.simpleblog.data.entity;
+package com.shop.entity;
 
 import com.sun.istack.NotNull;
 
