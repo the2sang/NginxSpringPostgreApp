@@ -1,0 +1,16 @@
+
+1. HTTP POST Data 생성
+  - POST 방식 요청
+  - http://localhost:8080/posts
+  - docker-compose 실행 후에는 nginx 80 포트로 요청 가능 : http://localhost/posts
+
+
+You can now test the API endpoints.
+Open up Postman and send a POST request to
+http://localhost:8080/posts endpoint using similar JSON data below:
+
+{
+  "title": "Test Post",
+  "post": "This POST request creates a Post"
+}
+
