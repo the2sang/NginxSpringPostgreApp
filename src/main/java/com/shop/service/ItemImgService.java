@@ -6,10 +6,11 @@ import lombok.RequiredArgsConstructor;
 import org.codehaus.groovy.util.StringUtil;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 import org.thymeleaf.util.StringUtils;
 
-import javax.transaction.Transactional;
+
 
 @Service
 @RequiredArgsConstructor
