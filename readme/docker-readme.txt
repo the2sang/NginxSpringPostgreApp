@@ -1,5 +1,7 @@
 
 
+github에서 가져온 후 pgadmin 밑에 파일이 있다면 삭제..
+
 Docker SpringBootJar build
 
 프로젝트 소스 수정 후
